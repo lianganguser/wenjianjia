@@ -1,0 +1,14 @@
+server:
+  port: 7001
+
+eureka:
+  instace:
+    hostname: eureka7001.com  #eureka服务端的名称
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      #集群版
+      #defaultZone: http://eureka7002.com:7002/eureka/
+      #单机版Eureka
+      defaultZone: http://localhost:7001/eureka/
